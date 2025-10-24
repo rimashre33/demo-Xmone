@@ -1936,4 +1936,33 @@ section .card:hover {
 /* Show overlay on hover */
 .gallery-item:hover .overlay {
     opacity: 1;
+
+}
+
+/*===== Responsive breakpoints ===== */
+/* Tablet View - 2 images per row */
+@media (max-width: 991px) {
+    .gallery-item {
+        flex: 0 0 calc(50% - 1rem);
+    }
+
+    #life-xm {
+        padding: 3rem 0;
+    }
+}
+
+/* Mobile View - 1 image per row */
+@media (max-width: 767px) {
+    .gallery-item {
+        flex: 0 0 100%;
+    }
+
+    .gallery-item img {
+        border-radius: 0.75rem;
+    }
+
+    .gallery-item .overlay {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
 }
